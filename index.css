@@ -125,12 +125,33 @@ html{
 
 /* KONTEN */
 .konten{
+    position: relative;
     background-color: #1c1c1c;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
+
+.bg-gradient{
+    position: absolute;
+    right: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1200px;
+    max-width: none;
+    opacity: 0.8;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.konten-kiri,
+.konten-kanan{
+    position: relative;
+    z-index: 2;
+}
+
 
 .konten-kiri{
     width: 50%;
@@ -157,7 +178,7 @@ html{
 .t21{
     font-size: 60px;
     font-weight: 700;
-    color: rgb(63, 63, 255);
+    color: rgb(0, 0, 255);
     margin-left: 15px;
 }
 
@@ -239,7 +260,8 @@ html{
 
 /* kondisi awal */
 .animate-left,
-.animate-bottom {
+.animate-bottom,
+.animate-mid {
     opacity: 0;
 }
 
@@ -255,11 +277,16 @@ html{
 
 /* aktif saat page load */
 .animate-left.show {
-    animation: slideLeft 1s ease forwards;
+    animation: slideLeft 1.2s ease forwards;
 }
 
 .animate-bottom.show {
     animation: slideUp 1.2s ease forwards;
+}
+
+.fade-up {
+    opacity: 0;
+    animation: fadeUp 1.2s ease forwards;
 }
 
 /* KEYFRAMES */
@@ -277,12 +304,27 @@ html{
     }
 }
 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(-180px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-220px);
+    }
+}
+
+.fade-up {
+    animation-delay: 0.5s;
+}
+
 .animate-left.show {
     animation-delay: 0.2s;
 }
 
 .animate-bottom.show {
-    animation-delay: 0.5s;
+    animation-delay: 0.8s;
 }
 
 
