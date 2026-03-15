@@ -123,57 +123,516 @@ html{
     width: 30%;
 }
 
-/* KONTEN */
+
+/* =========================
+   SECTION KONTEN PROFIL
+========================= */
+
 .konten{
-    background-color: #1c1c1c;
-    padding-top: 150px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 50px;
-}
-
-.bar1{
+    position: relative;
+    background-color: #131313;
+    height: 100vh;
     display: flex;
-    margin-bottom: 50px;
-    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
-.kotakprojek{
-    height: 360px;
-    width: 500px;
-    border-radius: 20px;
-    background-color: white;
+/* ===== GRADIENT ===== */
+.bg-gradient{
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translate(40%, -50%);
+    width: 1700px;
+    opacity: 0.8;
+    z-index: 1;
+    pointer-events: none;
 }
 
-.kotakprojek img{
-    height: 310px;
-    width: 500px;
-    border-radius: 20px;
+/* ================= LEFT ================= */
+
+.konten-kiri{
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.kotakprojek a{
+.imge{
+    width: 350px;
+    height: 432px;
+    margin-top: 150px;
+    object-fit: cover;
+    border-radius: 18px;
+    background: #d9d9d9;
+}
+
+/* nama */
+.nama{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.kt{
+    font-size: 24px;
+    opacity: 0.8;
+    margin-top: 6px;
+}
+
+/* sosmed */
+.iconsosmed{
+    margin-top: 30px;
+    display: flex;
+    gap: 70px;
+}
+
+.iconsosmed img{
+    width: 50px;
+    height: 50px;
+    opacity: 0.85;
+    transition: 0.2s;
+}
+
+.iconsosmed img:hover{
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+/* ================= RIGHT ================= */
+
+.konten-kanan{
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+    color: white;
+}
+
+.konten-teks{
+    max-width: 680px;
+    margin-top: 150px;
+}
+
+/* judul kecil */
+.t1{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+/* paragraf */
+.t2{
+    font-size: 20px;
+    line-height: 1.7;
+    opacity: 0.85;
+}
+
+/* ===== SKILLS ===== */
+.konten-teks-skill{
+    max-width: 680px;
+}
+
+.skills{
+    display: flex;
+    gap: 35px;
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.skills img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+/* ===== BUTTON ===== */
+
+.pt{
+    display: flex;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.pt a{
     text-decoration: none;
-    color: black;
 }
 
-.kotakprojek p{
-    margin-left: 20px;
-    margin-top: 5px;
+.tombol,
+.tombol2{
+    width: 140px;
+    padding: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+/* primary */
+.tombol{
+    background: #1a2cff;
+    color: white;
+    margin-top: 24px;
+}
+
+.tombol:hover{
+    background: #0f1ed6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(60, 80, 255, 0.4);
+}
+
+/* outline */
+.tombol2{
+    border: 2px solid #1a2cff;
+    color: white;
+    margin-top: 24px;
+}
+
+.tombol2:hover{
+    background: rgba(60, 80, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+
+/* KONTEN KEDUA */
+.kontenkedua{
+    background-color: #131313;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.bg2-gradient{
+    position: absolute;
+    right: -60px;
+    top: -42%;
+    transform: translate(40%, -50%);
+    width: 1700px;
+    opacity: 0.8;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bg4-gradient{
+    position: absolute;
+    right: -500px;
+    top: 80%;
+    transform: translate(40%, -50%);
+    width: 1000px;
+    opacity: 0.8;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* KONTEN 2 */
+.konten-5{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.organisasi{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.o{
+    display: flex;
+    justify-content: left;
+    gap: 89px;
+}
+
+.o-kotak{
+    color: black;
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow:
+        inset 6px 6px 22px rgba(0, 0, 0, 2);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.ji{
     font-size: 20px;
     font-weight: 500;
 }
 
-.bar2{
-    display: flex;
+.i{
+    font-size: 20px;
+    font-weight: 400;
 }
+
+/* KONTEN 2 */
+.konten-6{
+    color: white;
+    padding-top: 50px;
+}
+
+.proyek-apk{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.box-konten7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+}
+
+.pertama{
+    background-color: white;
+    height: 100%;
+    width: 410px;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.467);
+}
+
+.kedua{
+    background-color: white;
+    height: 100%;
+    width: 410px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.467);
+}
+
+.jk{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.k{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+/* KONTEN 7 */
+.konten-7{
+    background-color: #131313;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.bg3-gradient{
+    position: absolute;
+    right: -60px;
+    top: 40%;
+    transform: translate(40%, -50%);
+    width: 1800px;
+    opacity: 0.8;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.proyek-apk{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.box-konten7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: black;
+}
+
+.pertama{
+    background-color: white;
+    height: 100%;
+    width: 410px;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.467);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.kedua{
+    background-color: white;
+    height: 100%;
+    width: 410px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.467);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.jk{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.k{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-right: 270px;
+    margin-bottom: 30px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    background-color: rgb(197, 197, 197);
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.k:hover{
+    background-color: rgb(134, 134, 134);
+}
+
+.vb{
+    width: 353px;
+    height: 236px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.psf{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    width: 353px;
+    height: 236px;
+    border-radius: 8px;
+}
+
+.psd{
+    width: 190px;
+    height: 236px;
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-right: 100px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+
+/* ==========================
+   ANIMATION ON LOAD
+========================== */
+
+/* kondisi awal */
+.animate-left,
+.animate-bottom,
+.animate-mid {
+    opacity: 0;
+}
+
+/* teks dari kiri */
+.animate-left {
+    transform: translateX(-80px);
+}
+
+/* gambar dari bawah */
+.animate-bottom {
+    transform: translateY(80px);
+}
+
+/* aktif saat page load */
+.animate-left.show {
+    animation: slideLeft 1.2s ease forwards;
+}
+
+.animate-bottom.show {
+    animation: slideUp 1.2s ease forwards;
+}
+
+.fade-up {
+    opacity: 0;
+    animation: fadeUp 1.2s ease forwards;
+}
+
+/* KEYFRAMES */
+@keyframes slideLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(-180px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-220px);
+    }
+}
+
+.fade-up {
+    animation-delay: 0.5s;
+}
+
+.animate-left.show {
+    animation-delay: 0.2s;
+}
+
+.animate-bottom.show {
+    animation-delay: 0.8s;
+}
+
+
 
 /* FOOTER */
 .footer{
-    background-color: #1c1c1c;
+    background-color: #131313;
+    color: white;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.467);
 }
+
