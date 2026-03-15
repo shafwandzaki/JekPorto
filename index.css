@@ -126,7 +126,7 @@ html{
 /* KONTEN */
 .konten{
     position: relative;
-    background-color: #1c1c1c;
+    background-color: #131313;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -136,10 +136,22 @@ html{
 
 .bg-gradient{
     position: absolute;
-    right: 150px;
-    top: 50%;
+    right: 10px;
+    top: 45%;
     transform: translateY(-50%);
-    width: 1200px;
+    width: 1500px;
+    max-width: none;
+    opacity: 0.8;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bg2-gradient{
+    position: absolute;
+    right: -400px;
+    top: -35%;
+    transform: translateY(-50%);
+    width: 800px;
     max-width: none;
     opacity: 0.8;
     z-index: 1;
@@ -331,7 +343,7 @@ html{
 
 /* FOOTER */
 .footer{
-    background-color: #1c1c1c;
+    background-color: #131313;
     height: 50px;
     display: flex;
     justify-content: center;
