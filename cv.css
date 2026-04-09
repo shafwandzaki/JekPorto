@@ -332,7 +332,7 @@ h1{
 /* NAVBAR */
 .navbar{
     height: 60px;
-    padding: 0 15px;
+    margin-left: 15px;
 }
 
 .judul{
@@ -349,6 +349,7 @@ h1{
     font-size: 26px;
     color: white;
     cursor: pointer;
+    margin-right: 25px;
 }
 
 .link{
