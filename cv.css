@@ -313,6 +313,11 @@ h1{
     animation-delay: 0.8s;
 }
 
+/* HIDE HAMBURGER DI DESKTOP */
+.hamburger{
+    display: none;
+}
+
 /* FOOTER */
 .footer{
     background-color: #1c1c1c;
