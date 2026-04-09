@@ -623,7 +623,10 @@ html{
     animation-delay: 0.8s;
 }
 
-
+/* HIDE HAMBURGER DI DESKTOP */
+.hamburger{
+    display: none;
+}
 
 /* FOOTER */
 .footer{
@@ -641,7 +644,7 @@ html{
 ========================= */
 @media (max-width: 768px){
 
-    /* NAVBAR */
+    /* ===== NAVBAR ===== */
     .navbar{
         height: 60px;
         margin-left: 15px;
