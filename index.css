@@ -372,8 +372,32 @@ html{
         font-size: 22px;
     }
 
+    .hamburger{
+        display: block;
+        font-size: 26px;
+        color: white;
+        cursor: pointer;
+    }
+
     .link{
-        display: none; /* biar clean (opsional nanti bikin hamburger) */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background: rgba(0,0,0,0.9);
+        flex-direction: column;
+        padding: 20px;
+
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: 0.3s;
+    }
+
+    .link.active{
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
     }
 
     /* KONTEN */
