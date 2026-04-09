@@ -300,6 +300,12 @@ html{
     width: 250px;
 }
 
+/* HIDE HAMBURGER DI DESKTOP */
+.hamburger{
+    display: none;
+}
+
+
 /* FOOTER */
 .footer{
     background-color: #1c1c1c;
@@ -309,4 +315,142 @@ html{
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.467);
+}
+
+@media (max-width: 768px){
+
+/* NAVBAR */
+.navbar{
+    height: 60px;
+    margin-left: 15px;
+}
+
+.judul{
+    width: auto;
+}
+
+.judul p{
+    margin-left: 0;
+    font-size: 22px;
+}
+
+.hamburger{
+    display: block;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.link{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background: rgba(0,0,0,0.9);
+    flex-direction: column;
+    padding: 20px;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.link.active{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* ================= PHOTO PAGE ================= */
+.photo-page{
+    padding: 100px 20px;
+}
+
+.page-title{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.section{
+    margin-bottom: 40px;
+}
+
+.section-title{
+    font-size: 16px;
+}
+
+/* SCROLL */
+.photo-scroll{
+    gap: 15px;
+    padding: 15px 0;
+}
+
+/* AKTIFKAN SCROLL DI MOBILE */
+.photo-scroll{
+    overflow-x: auto;
+}
+
+/* FOTO */
+.photo-scroll.landscape img{
+    height: 180px;
+}
+
+.photo-scroll.portrait img{
+    height: 240px;
+}
+
+/* ================= KONTEN 3 ================= */
+.konten-3{
+    padding: 30px 20px;
+}
+
+.box-konten3{
+    flex-direction: column; /* dari samping → ke bawah */
+    align-items: center;
+}
+
+.fotoig{
+    height: 400px;
+    width: 200px;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.kt{
+    font-size: 18px;
+    text-align: center;
+}
+
+.ki{
+    font-size: 16px;
+    width: 150px;
+    text-align: center;
+}
+
+/* ================= KONTEN 4 ================= */
+.konten-4{
+    padding: 30px 20px;
+}
+
+.jproyek{
+    font-size: 18px;
+}
+
+.penjelasan{
+    font-size: 16px;
+}
+
+.imgapk{
+    width: 100%;
+    height: auto;
+}
+
+/* ================= RING FIX ================= */
+/* biar ga kepotong di HP */
+.photo-ring-track{
+    gap: 15px;
+}
+
 }
