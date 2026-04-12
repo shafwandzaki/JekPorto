@@ -343,6 +343,9 @@ html{
 .hamburger{
     display: none;
 }
+.konten-mobile1{
+    display: none;
+}
 
 /* FOOTER */
 .footer{
@@ -363,16 +366,16 @@ html{
     /* NAVBAR */
     .navbar{
         height: 60px;
-        margin-left: 15px;
-    }
-
-    .judul{
-        width: auto;
+        margin: 0;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .judul p{
-        margin-left: 0;
-        font-size: 22px;
+        margin: 0;
+        font-size: 20px;
     }
 
     .hamburger{
@@ -380,17 +383,21 @@ html{
         font-size: 26px;
         color: white;
         cursor: pointer;
-        margin-right: 25px;
+        margin-right: 40px;
     }
 
     .link{
         position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        background: rgba(0,0,0,0.9);
+        top: 50px;
+        right: 55px;
+        width: 100px;
+        height: 300px;
+        background-color: rgba(35, 35, 35, 0.329);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         flex-direction: column;
-        padding: 20px;
+        padding-bottom: 10px;
+        border-radius: 12px;
 
         opacity: 0;
         transform: translateY(-20px);
@@ -407,108 +414,139 @@ html{
     /* KONTEN */
     .konten{
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
         height: auto;
-        padding-top: 100px;
-        padding-bottom: 40px;
+        padding: 90px 20px 40px;
+        position: relative;
     }
 
-    /* BACKGROUND BIAR GA OVERFLOW */
+    /* BACKGROUND */
     .bg-gradient{
-        width: 120%;
-        right: -200px;
-        top: 50%;
-        opacity: 0.5;
+        width: 140%;
+        right: -50px;
+        top: 80%;
+        opacity: 0.6;
     }
 
     .bg2-gradient{
         width: 500px;
         right: -200px;
-        top: -100px;
-        opacity: 0.5;
+        top: -0px;
+        opacity: 0.6;
     }
 
     /* KIRI */
     .konten-kiri{
         width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: center;
+        padding: 0;
     }
 
     .konten-teks{
-        margin-top: 0;
-        margin-bottom: 40px;
+        margin: 0;
     }
 
+    /* TEKS */
     .t1{
-        font-size: 18px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        opacity: 0.8;
     }
 
     .t2{
-        font-size: 32px;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.2;
     }
 
     .t21{
-        font-size: 32px;
+        font-size: 28px;
         margin-left: 0;
+        color: #3b82f6;
+        font-weight: bold;
     }
 
     .t3{
-        font-size: 18px;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        opacity: 0.8;
     }
 
-    /* NAMA JADI KE BAWAH */
+    /* NAMA */
     .tp{
         flex-direction: column;
+        gap: 0;
+    }
+
+    /* FOTO PROFILE (INI KUNCI UTAMA BIAR SAMA DESIGN) */
+    .konten-mobile1{
+        display: flex;
+        justify-content: center;
+        margin: 25px 0;
+    }
+
+    .konten-mobile1 img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     /* BUTTON */
     .pt{
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
     .tombol{
-        width: 160px;
+        width: 260px;
         font-size: 16px;
-        margin-top: 30px;
+        padding: 12px;
+        border-radius: 10px;
+        background: linear-gradient(to right, #3b82f6, #1d4ed8);
+        color: white;
+        font-weight: bold;
+        margin-top: 10px;
     }
 
     .tombol2{
-        width: 160px;
+        width: 260px;
         font-size: 16px;
-        margin-left: 0;
-        margin-top: 15px;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.5);
+        color: white;
+        margin: 0;
     }
 
     /* SOSMED */
     .iconsosmed{
-        margin-top: 20px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
     }
 
     .iconsosmed img{
-        width: 35px;
-        height: 35px;
-        margin-right: 20px;
+        width: 28px;
+        height: 28px;
+        margin: 0;
+        opacity: 0.9;
     }
 
-    /* KANAN (GAMBAR) */
+    /* KANAN (DIMATIKAN DI MOBILE) */
     .konten-kanan{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-    }
-
-    .konten-kanan img{
-        width: 220px;
-        height: auto;
+        display: none;
     }
 
     /* FOOTER */
     .footer{
-        height: 40px;
-        font-size: 14px;
+        height: 35px;
+        font-size: 12px;
+        text-align: center;
     }
 }
