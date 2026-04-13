@@ -335,55 +335,61 @@ h1{
 @media (max-width: 768px){
 
 /* NAVBAR */
-.navbar{
-    height: 60px;
-    margin-left: 15px;
-}
+    .navbar{
+        height: 60px;
+        /* margin-left: 15px; */
+    }
 
-.judul{
-    width: auto;
-}
+    .judul{
+        width: auto;
+    }
 
-.judul p{
-    margin-left: 0;
-    font-size: 22px;
-}
+    .judul p{
+        margin-left: 20px;
+        font-size: 22px;
+    }
 
-.hamburger{
-    display: block;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-    margin-right: 25px;
-}
+    .hamburger{
+        display: block;
+        font-size: 26px;
+        color: white;
+        cursor: pointer;
+        margin-right: 40px;
+        -webkit-tap-highlight-color: transparent;
+    }
 
-.link{
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    background: rgba(0,0,0,0.9);
-    flex-direction: column;
-    padding: 20px;
+    .link{
+        position: absolute;
+        top: 50px;
+        right: 55px;
+        width: 100px;
+        height: 300px;
+        background-color: rgba(35, 35, 35, 0.329);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding-bottom: 10px;
+        border-radius: 12px;
 
-    opacity: 0;
-    transform: translateY(-20px);
-    pointer-events: none;
-    transition: 0.3s;
-}
+        opacity: 0;
+        -webkit-tap-highlight-color: transparent;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: 0.3s;
+    }
 
-.link.active{
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
+    .link.active{
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
 
 /* KONTEN */
 .konten{
     padding-top: 100px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 
 /* GRADIENT */
@@ -439,9 +445,13 @@ h1{
 
 /* BUTTON */
 .lihatcv{
-    width: 100%;
+    width: 100px;
     text-align: center;
     font-size: 14px;
+}
+
+.a{
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* FOOTER */
