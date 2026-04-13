@@ -366,16 +366,14 @@ html{
     /* NAVBAR */
     .navbar{
         height: 60px;
-        margin: 0;
-        padding: 0 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
     .judul p{
-        margin: 0;
-        font-size: 20px;
+        margin-left: 20px;
+        font-size: 22px;
     }
 
     .hamburger{
@@ -384,6 +382,7 @@ html{
         color: white;
         cursor: pointer;
         margin-right: 40px;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .link{
@@ -400,6 +399,7 @@ html{
         border-radius: 12px;
 
         opacity: 0;
+        -webkit-tap-highlight-color: transparent;
         transform: translateY(-20px);
         pointer-events: none;
         transition: 0.3s;
@@ -418,7 +418,7 @@ html{
         align-items: center;
         text-align: center;
         height: auto;
-        padding: 90px 20px 40px;
+        padding: 120px 20px 40px;
         position: relative;
     }
 
@@ -484,7 +484,8 @@ html{
     .konten-mobile1{
         display: flex;
         justify-content: center;
-        margin: 25px 0;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .konten-mobile1 img{
@@ -500,6 +501,7 @@ html{
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .tombol{
@@ -525,7 +527,8 @@ html{
 
     /* SOSMED */
     .iconsosmed{
-        margin-top: 25px;
+        margin-top: 50px;
+        margin-bottom: 17px;
         display: flex;
         justify-content: center;
         gap: 25px;
